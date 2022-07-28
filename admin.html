@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="admin.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <a href="index.html"><img src="logocopy.png"></a> 
+            </div>
+
+            <span class="logo_name">EduMate</span>
+        </div>
+
+   
+
+
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-user-circle"></i>
+                    <span class="link-name">Teachers</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Students</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-books"></i>
+                    <span class="link-name">Courses</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-edit-alt"></i>
+                    <span class="link-name">Exam</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-setting"></i>
+                    <span class="link-name">Settings</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <!-- <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div> -->
+
+
+            <ul class="nav-linkss">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li class="center"><a href="#">Admin</a></li> -->
+                <li class="upward"><a href="login.html">Teachers</a></li>
+                <li class="forward"><a href="login.html">Students</a></li>
+                <li class="forward"><a href="#">About Us</a></li>
+                <li class="forward"><a href="#">Contact Us</a></li>
+              </ul>
+            
+            <!-- <img src="images/profile.jpg" alt=""> -->
+
+
+
+
+
+
+
+
+            <img src="profile.jpg" onclick="settingsMenuuToggle()">
+            <!-- <h2 class="hu">Admin</h2> -->
+            <div class="settings-menuu">
+                <div class="settings-menuu-inner">
+                    <div class="user-profile">
+                        <!-- <img src="images/dp3.jpg"> -->
+                        <div>
+                            <span>User Admin</span>
+                            <!-- <p class="text-bold">Akriti Accepted your friend request</p> -->
+                            <!-- <small class="text-muted">2 MINUTES AGO</small> -->
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <span class="text">Total Students</span>
+                        <span class="number">1,050</span>
+                    </div>
+                    <div class="box box2">
+                        <span class="text">Total Teachers</span>
+                        <span class="number">40</span>
+                    </div>
+                    <div class="box box3">
+                        <span class="text">Total Coarses</span>
+                        <span class="number">20</span>
+                    </div>
+                    
+                    <div class="box box4">
+                        <span class="text">Exam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
